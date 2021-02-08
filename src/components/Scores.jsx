@@ -22,7 +22,7 @@ export default function Scores({ data, category }) {
       if (item.data.difficulty === "hard")
         setHard((prevState) => [...prevState, item]);
     });
-  }, [data]);
+  }, [data, category]);
 
   return (
     <Container>
