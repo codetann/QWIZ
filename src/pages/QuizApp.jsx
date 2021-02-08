@@ -23,7 +23,7 @@ export default function QuizApp() {
   const { id, nickname, difficulty, colors, title } = useLocation().state;
 
   useEffect(() => {
-    const URL = `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=${difficulty}&type=multiple`;
+    const URL = `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=${difficulty}&type=multiple&encode=base64`;
     axios
       .get(URL)
       .then((response) => {
@@ -106,7 +106,7 @@ export default function QuizApp() {
               </div>
             </ProgressBar>
             <h1 style={{ color: "#8a93bc" }}>Question {index}/10</h1>
-            <Question>{questions[index - 1].question}</Question>
+            <Question>{window.atob(questions[index - 1].question)}</Question>
           </QuestionContainer>
           {/* answers */}
           <AnswerContainer>
@@ -118,7 +118,7 @@ export default function QuizApp() {
                 value={question}
                 onClick={checkAnswer}
               >
-                {question}
+                {window.atob(question)}
               </Answer>
             ))}
           </AnswerContainer>
