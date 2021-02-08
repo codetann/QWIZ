@@ -79,6 +79,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 1rem;
 `;
 
 const NavBar = styled.div`

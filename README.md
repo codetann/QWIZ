@@ -14,5 +14,4 @@ for the time being, it works. Yay!
 
 ### `Link`
 
-Production Link: [deployment](https://facebook.github.io/create-react-app/docs/deployment)
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Production Link: https://infallible-hypatia-374001.netlify.app/
