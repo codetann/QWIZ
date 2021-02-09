@@ -9,14 +9,16 @@ export default function Home() {
   return (
     <HomePage>
       <AppBar />
-      {categories.map((item) => (
-        <Category
-          key={item.id}
-          title={item.category}
-          colors={item.colors}
-          id={item.id}
-        />
-      ))}
+      <CategoryContainer>
+        {categories.map((item) => (
+          <Category
+            key={item.id}
+            title={item.category}
+            colors={item.colors}
+            id={item.id}
+          />
+        ))}
+      </CategoryContainer>
     </HomePage>
   );
 }
@@ -30,4 +32,14 @@ const HomePage = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+`;
+
+const CategoryContainer = styled.div`
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 `;

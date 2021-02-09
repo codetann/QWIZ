@@ -24,12 +24,12 @@ export default function Category({ colors, title, id }) {
 
 // - Styled Components
 const Container = styled.div`
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem;
   border-radius: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 `;
