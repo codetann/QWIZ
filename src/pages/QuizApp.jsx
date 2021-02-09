@@ -20,7 +20,7 @@ export default function QuizApp() {
   const [score, setScore] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [index, setIndex] = useState(1);
-  const { id, nickname, difficulty, colors, title } = useLocation().state;
+  const { id, difficulty, colors, title } = useLocation().state;
 
   useEffect(() => {
     const URL = `https://opentdb.com/api.php?amount=10&category=${id}&difficulty=${difficulty}&type=multiple&encode=base64`;
@@ -77,7 +77,6 @@ export default function QuizApp() {
       {index === 11 && (
         <End
           score={score}
-          nickname={nickname}
           colors={colors}
           title={title}
           difficulty={difficulty}

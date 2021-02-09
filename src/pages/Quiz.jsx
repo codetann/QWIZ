@@ -8,12 +8,22 @@ import AppBar from "../components/AppBar";
 
 export default function Quiz() {
   // - hooks
-  const [nickname, setNickname] = useState("");
+  const [selected, setSelected] = useState({
+    easy: true,
+    medium: false,
+    hard: false,
+  });
   const [difficulty, setDifficulty] = useState("easy");
   const { title, id, colors } = useLocation().state;
 
   // - Functions
   function handleClick(e) {
+    if (e.target.value === "easy")
+      setSelected({ easy: true, medium: false, hard: false });
+    if (e.target.value === "medium")
+      setSelected({ easy: false, medium: true, hard: false });
+    if (e.target.value === "hard")
+      setSelected({ easy: false, medium: false, hard: true });
     setDifficulty(e.target.value);
   }
 
@@ -30,6 +40,7 @@ export default function Quiz() {
           onClick={handleClick}
           value="easy"
           style={{
+            opacity: selected.easy ? ".5" : "1",
             background: "#79d670",
             borderRadius: "1rem 0 0 1rem",
             cursor: "pointer",
@@ -40,7 +51,11 @@ export default function Quiz() {
         <DiffBtn
           onClick={handleClick}
           value="medium"
-          style={{ background: "#dcdf39", cursor: "pointer" }}
+          style={{
+            background: "#dcdf39",
+            cursor: "pointer",
+            opacity: selected.medium ? ".5" : "1",
+          }}
         >
           Medium
         </DiffBtn>
@@ -48,6 +63,7 @@ export default function Quiz() {
           onClick={handleClick}
           value="hard"
           style={{
+            opacity: selected.hard ? ".5" : "1",
             background: "#e2563e",
             borderRadius: "0 1rem 1rem 0",
             cursor: "pointer",
@@ -64,7 +80,7 @@ export default function Quiz() {
         <Link
           to={{
             pathname: `/quiz/${title}`,
-            state: { id, nickname, difficulty, colors, title },
+            state: { id, difficulty, colors, title },
           }}
         >
           <StartBtn>Start Quiz</StartBtn>
@@ -109,16 +125,13 @@ const DiffBtn = styled.button`
   height: 100%;
   border: none;
   font-weight: bold;
-
-  &:focus {
-    opacity: 0.5;
-  }
+  outline: none;
 `;
 
 /* buttons */
 const ButtonContainer = styled.div`
   width: 100%;
-  height: auto;
+  height: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -72,7 +72,7 @@ const Container = styled.div`
 const NavBar = styled.div`
   max-width: 800px;
   height: 6rem;
-  width: 100%;
+  width: 90%;
   color: #252c4a;
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,7 @@ const Home = styled.button`
   color: #8a93bc;
   border: none;
   background: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   cursor: pointer;
 `;
 
@@ -93,7 +93,7 @@ const Selection = styled.select`
   border: 1px solid #8a93bc;
   background: none;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 `;
 const Option = styled.option`
   background: none;
@@ -105,7 +105,7 @@ const Option = styled.option`
 const Title = styled.div`
   width: 90%;
   height: 200px;
-  font-size: 50px;
+  font-size: 3rem;
   color: white;
   border-radius: 1rem;
   display: flex;

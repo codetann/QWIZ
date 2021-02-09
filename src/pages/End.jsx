@@ -30,11 +30,7 @@ export default function End({ score, title, colors, difficulty }) {
       </Title>
       <NameContainer>
         <Nickname>Nick name:</Nickname>
-        <Input
-          ref={inputRef}
-          placeholder="Enter nickname here..."
-          type="text"
-        />
+        <Input ref={inputRef} placeholder="Enter nickname" type="text" />
       </NameContainer>
       <ButtonContainer>
         <Link to="/">
@@ -84,8 +80,8 @@ const NameContainer = styled.div`
 `;
 const Nickname = styled.h4`
   color: #333333;
-  width: 8rem;
-  margin-right: 2rem;
+  width: 9rem;
+  margin-right: 1rem;
 `;
 const Input = styled.input`
   width: 100%;
@@ -114,6 +110,7 @@ const Submit = styled.button`
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
+  outline: none;
 `;
 const Home = styled.button`
   color: #8a93bc;

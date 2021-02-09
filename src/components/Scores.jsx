@@ -90,6 +90,7 @@ const EasyTitle = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  font-size: 0.8rem;
 `;
 const MediumTitle = styled.div`
   width: 100%;
@@ -100,6 +101,7 @@ const MediumTitle = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  font-size: 0.8rem;
 `;
 const HardTitle = styled.div`
   width: 100%;
@@ -110,6 +112,7 @@ const HardTitle = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  font-size: 0.8rem;
 `;
 
 const Score = styled.div`
