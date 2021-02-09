@@ -75,7 +75,7 @@ const Title = styled.div`
 
 const NameContainer = styled.div`
   width: 90%;
-  height: 3rem;
+  height: 4rem;
   background: #cbccd2;
   display: flex;
   align-items: center;
@@ -83,8 +83,9 @@ const NameContainer = styled.div`
   border-radius: 1rem;
 `;
 const Nickname = styled.h4`
-  color: #999999;
+  color: #333333;
   width: 8rem;
+  margin-right: 2rem;
 `;
 const Input = styled.input`
   width: 100%;

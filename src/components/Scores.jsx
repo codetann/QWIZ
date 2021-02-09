@@ -77,12 +77,15 @@ const Container = styled.div`
 
 const ScoreContainer = styled.div`
   width: 100%;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 `;
 const EasyTitle = styled.div`
   width: 100%;
   height: 6rem;
   background: #79d670;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +95,7 @@ const MediumTitle = styled.div`
   width: 100%;
   height: 6rem;
   background: #dcdf39;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +105,7 @@ const HardTitle = styled.div`
   width: 100%;
   height: 6rem;
   background: #e2563e;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   display: flex;
   justify-content: center;
   align-items: center;

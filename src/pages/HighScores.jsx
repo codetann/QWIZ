@@ -61,38 +61,39 @@ export default function HighScores() {
 const Container = styled.div`
   width: 100%;
   max-width: 800px;
-  height: 100%;
   background: #252c4a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 `;
 
 const NavBar = styled.div`
-  width: 90%;
-  height: 5rem;
-  background: #252c4a;
+  max-width: 800px;
+  height: 6rem;
+  width: 100%;
+  color: #252c4a;
   display: flex;
   justify-content: space-between;
   align-items: center;
 `;
 
 const Home = styled.button`
-  padding: 0.5rem 2rem;
   color: #8a93bc;
   border: none;
   background: none;
+  font-size: 1.5rem;
   cursor: pointer;
 `;
 
 const Selection = styled.select`
   border-radius: 0.5rem;
-  padding: 0.5rem;
   color: #8a93bc;
   border: 1px solid #8a93bc;
   background: none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
 `;
 const Option = styled.option`
   background: none;
@@ -103,15 +104,13 @@ const Option = styled.option`
 
 const Title = styled.div`
   width: 90%;
-  height: 300px;
-  font-size: 32px;
+  height: 200px;
+  font-size: 50px;
   color: white;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  background: #c96a6a;
 `;
 
 const Results = styled.div`

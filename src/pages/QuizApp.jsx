@@ -195,7 +195,7 @@ const Answer = styled.button`
 `;
 
 const Next = styled.button`
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
   font-size: 20px;
   font-weight: bold;
   color: white;
@@ -203,5 +203,11 @@ const Next = styled.button`
   border: none;
   border-radius: 2rem;
   margin: auto;
+  outline: none;
   cursor: pointer;
+
+  &:hover {
+    padding: 0.95rem 4.95rem;
+    opacity: 0.8;
+  }
 `;

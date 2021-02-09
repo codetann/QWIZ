@@ -25,7 +25,7 @@ const Container = styled.div`
 `;
 const HighScore = styled.button`
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background: none;
   color: #8a93bc;
   border: 1px solid #8a93bc;
