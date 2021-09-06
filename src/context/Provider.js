@@ -1,6 +1,7 @@
 import React, { useState, createContext, useEffect } from "react";
 import firebase from "../firebase";
 import { categories } from "../data";
+import { Categories } from "../utils/triviaDB";
 import { parseArray } from "../util";
 
 export const AppContext = createContext();
@@ -16,13 +17,13 @@ export default function Provider({ children }) {
             data that was received through firebase. If there is no data returned,
             an object is created with an the category and no results.
         */
-    categories.forEach((item) => {
-      const scoreRef = firebase.database().ref(item.category);
+    Categories.forEach((item) => {
+      const scoreRef = firebase.database().ref(item.name);
 
       scoreRef.on("value", (snapshot) => {
         if (snapshot.val() === null)
-          arr.push({ category: item.category, results: [] });
-        arr.push(parseArray(snapshot.val(), item.category));
+          arr.push({ category: item.name, results: [] });
+        arr.push(parseArray(snapshot.val(), item.name));
       });
     });
 

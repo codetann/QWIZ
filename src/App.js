@@ -1,23 +1,31 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
-import "./App.css";
+
+import { MainLayout } from "./components/layout";
 // pages
-import Home from "./pages/Home";
-import Quiz from "./pages/Quiz";
+//import Home from "./pages/Home";
+//import Quiz from "./pages/Quiz";
 import QuizApp from "./pages/QuizApp";
-import HighScores from "./pages/HighScores";
+//import HighScores from "./pages/HighScores";
+// new pages
+import { Home } from "./pages/home";
+import { Setup } from "./pages/setup";
+import { Quiz } from "./pages/quiz";
+import { HighScores } from "./pages/scores";
 
 function App() {
   return (
-    <Application>
-      <Router>
-        <Route path="/" exact component={Home} />
-        <Route path="/quiz" exact component={Quiz} />
-        <Route path="/quiz/:category" exact component={QuizApp} />
+    <Router>
+      <Switch>
         <Route path="/highscores" exact component={HighScores} />
-      </Router>
-    </Application>
+        <MainLayout>
+          <Route path="/" exact component={Home} />
+          <Route path="/setup" exact component={Setup} />
+          <Route path="/quiz/:category" exact component={Quiz} />
+        </MainLayout>
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { categories } from "../data";
+import { SimpleGrid } from "@chakra-ui/react";
 // components
-import AppBar from "../components/AppBar";
+
 import Category from "../components/Category";
 
 export default function Home() {
   return (
     <HomePage>
-      <AppBar />
       <CategoryContainer>
         {categories.map((item) => (
           <Category

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import styled from "styled-components";
 // components
-import AppBar from "../components/AppBar";
 
 export default function Quiz() {
   // - hooks
@@ -29,7 +28,6 @@ export default function Quiz() {
 
   return (
     <Container>
-      <AppBar />
       <Title style={{ background: colors.background, color: colors.color }}>
         <h3>{title}</h3>
       </Title>

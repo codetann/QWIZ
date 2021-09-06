@@ -1,4 +1,4 @@
-# QWIZ App
+# Qwiz App
 
 This project was created with React, React Router, Firebase, Firestore, and Styled Components
 
