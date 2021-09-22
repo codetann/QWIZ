@@ -1,17 +1,35 @@
-# Qwiz App
+# Qwiz
 
-This project was created with React, React Router, Firebase, Firestore, and Styled Components
+[DEMO](https://infallible-hypatia-374001.netlify.app/)
 
-### `About`
+This project was created with React, React Router, Firebase, Firestore, and Chakra-UI
 
-This is a quiz application that lets users select a category, difficalty, and nickname to save their scores.
+### About this Project
 
-The database is hosted on firebase.
+Using the https://opentdb.com/, I was able to create a simple quiz application that fetches different quizes based on users preference.
 
-I have always wanted to create a quiz application with different categories and let users save their scores.
-I finally got around to it and it was a learning experience for sure. The code could use some refactoring but
-for the time being, it works. Yay!
+The site was recently redesigned using [Chakra-UI](https://chakra-ui.com/)
 
-### `Link`
+## Installation
 
-Production Link: https://infallible-hypatia-374001.netlify.app/
+1. Clone github repository with HTTPS or SSH
+
+```bash
+  git clone https://github.com/codetann/QWIZ.git
+
+  cd QWIZ
+```
+
+2. Install NPM packages
+
+```bash
+    npm install
+```
+
+## Run Locally
+
+Start the server
+
+```bash
+  npm start
+```

@@ -1,8 +1,7 @@
 import React, { useState, createContext, useEffect } from "react";
 import firebase from "../firebase";
-import { categories } from "../data";
 import { Categories } from "../utils/triviaDB";
-import { parseArray } from "../util";
+import { parseArray } from "../utils/parse";
 
 export const AppContext = createContext();
 

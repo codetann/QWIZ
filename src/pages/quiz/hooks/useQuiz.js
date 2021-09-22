@@ -20,10 +20,6 @@ export function useQuiz(id, level) {
         setQuestions(parseData(res.data.results));
       })
       .catch((err) => console.log(err));
-
-    // return () => {
-    //   setQuestions([]);
-    // };
   }, []);
 
   // quiz functions
@@ -37,8 +33,11 @@ export function useQuiz(id, level) {
       e.target.style.background = "red";
     }
 
+    setAnswered(true);
+
     setTimeout(() => {
       setIndex((prevState) => prevState + 1);
+      setAnswered(false);
     }, 1000);
   };
 

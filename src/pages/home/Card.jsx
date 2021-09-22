@@ -1,5 +1,4 @@
-import React from "react";
-import { Box, Button, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 //import CardModal from "./CardModal";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Categories } from "../../utils/triviaDB";
 import { SimpleGrid } from "@chakra-ui/react";
 import { Card } from "./Card";

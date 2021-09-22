@@ -3,7 +3,6 @@ import { useHistory } from "react-router";
 import {
   HStack,
   Heading,
-  Button,
   Spacer,
   useColorMode,
   IconButton,

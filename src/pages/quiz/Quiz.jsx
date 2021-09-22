@@ -14,8 +14,7 @@ export function Quiz() {
     return p.textContent;
   };
 
-  const { checkAnswer, isFinished, score, answered, index, questions } =
-    useQuiz(id, level);
+  const { checkAnswer, score, answered, index, questions } = useQuiz(id, level);
 
   if (!questions) return <div>Loading</div>;
 
