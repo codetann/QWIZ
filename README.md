@@ -1,6 +1,6 @@
 # Qwiz
 
-[DEMO](https://infallible-hypatia-374001.netlify.app/)
+[Project Demo](https://infallible-hypatia-374001.netlify.app/)
 
 This project was created with React, React Router, Firebase, Firestore, and Chakra-UI
 
