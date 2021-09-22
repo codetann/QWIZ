@@ -1,14 +1,16 @@
 # Qwiz
 
-[Project Demo](https://infallible-hypatia-374001.netlify.app/)
+[DEMO](https://infallible-hypatia-374001.netlify.app/)
 
-This project was created with React, React Router, Firebase, Firestore, and Chakra-UI
-
-### About this Project
+## About this Project
 
 Using the https://opentdb.com/, I was able to create a simple quiz application that fetches different quizes based on users preference.
 
-The site was recently redesigned using [Chakra-UI](https://chakra-ui.com/)
+### Tech Used
+
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Chakra-UI](https://chakra-ui.com/)
 
 ## Installation
 
